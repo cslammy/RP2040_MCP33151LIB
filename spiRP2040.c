@@ -36,11 +36,12 @@ uint8_t data8ret[1]; // bits for read return
 
 
     //set pins
-const uint cs_pin = 17;
-const uint sck_pin = 18;
-const uint mosi_pin = 19;
-const uint miso_pin = 16;
 
+    //set pins
+const uint cs_pin = 5;
+const uint sck_pin = 2;
+const uint mosi_pin = 3;
+const uint miso_pin = 4;
 
 
 
@@ -78,7 +79,7 @@ if (mode == 3)
 	{
      spi_set_format(spi0,SPI_BITS,1,1,SPI_MSB_FIRST);
 	}
-else
+if (mode == 0)
 		{
         spi_set_format(spi0,SPI_BITS,0,0,SPI_MSB_FIRST); // mode 0
 		}
