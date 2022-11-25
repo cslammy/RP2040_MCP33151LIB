@@ -19,7 +19,7 @@ pico_sdk_init()
 add_executable(${PROJECT_NAME}
 	#for instance:
 	#file1.c   file2.c  file3.c  all_your_dookies.c
-	main.c mcp33151.c
+	main.c mcp33151.c spiRP2040.c UART.h
 	)
 
 #create extra uf2 etc files
@@ -28,6 +28,7 @@ pico_add_extra_outputs(${PROJECT_NAME})
 #linker needs to use these libraries
 target_link_libraries(${PROJECT_NAME} 
     pico_stdlib
+    hardware_spi
 )
 
 #control USB output--1 means on.
