@@ -12,6 +12,6 @@ uint16_t rawdataread = 0;  // result of initial read from MCP3201, before bitmov
    {
 
     databack = SPI_TransferTxRx16_SingleCS(spi0, somedata);
-    //databack = rawdataread | 0b0011111111111111;
+    
     return databack;
    }
