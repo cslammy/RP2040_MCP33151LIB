@@ -33,7 +33,7 @@ uint16_t adc = 0;
  //       {
  //       reset_usb_boot(0,0);
  //       } 
-
+    sleep_ms(500);
     adc = get_MCP33151();
     
     printf("adc is: %d \n",adc);
