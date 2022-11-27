@@ -14,7 +14,7 @@ main.c is used to test the ADC reads by looping a SPI 16 bit read from the IC an
 
 spiRP2040.h and .c are libraries for SPI reads and writes for the RP2040 MCU
 
-UART.h and .c provides buffer to trap serial communication. 
+UART.h and .c provides a buffer to trap serial communication. 
 
 uf2copy.sh is a shell script to copy the uf2 firmware to the RP2040. You will need to edit it for your own development setup or just manually copy the UF2 to your RP2040 dev board.
 
